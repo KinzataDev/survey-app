@@ -1,0 +1,61 @@
+Model:
+  User
+    user_id
+    username
+    password
+    email
+    user_role
+
+  Survey
+    survey_id
+    name
+
+  SurveyQuestion
+    question_id
+    survey_id
+    question_text
+
+  SurveyQuestionAnswer
+    question_id
+    answer_id
+    answer_data
+    answer_type_value
+
+  LookupAnswerType
+    answer_type_value
+    answer_type
+
+  UserSurvey - User takes survey, this is the top level field to record that
+    user_id
+    survey_id
+    answer_set_id
+
+  AnswerSet - AnswerSet contains record for each question in survey, with answer data
+    answer_set_id
+    question_id
+    answer_id
+    answer_data
+
+Pages:
+  Landing page - Guest or Administrator
+  Guest -> Get email
+  Admin -> login prompt
+
+  If Guest:
+    Show list of surveys
+    Survey shows questions, answer, submit
+
+  If Admin:
+    Wizard for creating surveys
+    Edit Surveys
+    View results
+
+  API:
+    / - GET
+    /login - POST
+    /survey - GET - list of surveys
+    /survey - POST - create survey
+    /survey/:id - GET - show questions
+    /survey/:id - POST - edit survey
+    /survey/:id/take - GET - Take survey
+    /usersurvey - POST - Submit survey answers

@@ -1,0 +1,24 @@
+Build Survey Website
+=====================
+Design, code a small website that will administer surveys for users.
+Please use a code repository such as Github or Bitbucket to share your results.
+Please host the project somewhere (Heroku, Hyperdev, etc) in order to allow a demonstration of your project to our team.
+Programming language, technology choices, and design are up to your preference.
+
+User Types:
+Admin - Creates/edits surveys
+User - Can complete a survey
+
+Survey Admin Area:
+Admin users must have a way to login
+Only admins have access to created/edit surveys
+Admin users should have a way to create a new survey, system should support the ability to administer multiple different surveys.
+Admin users should have a way to add/edit/delete survey questions.
+Admin users should have a way to add different types of answers. Eg: Text answers, multiple choice, single choice, numeric
+Admin users should have a way to view survey answers by users
+
+Public Area:
+Require a user to provide their email address to take the survey.
+Require a user to complete each question within a given survey.
+Allow a user to change their answer during the survey process.
+Allow a user to "submit" their survey.
