@@ -14,7 +14,6 @@ module.exports = React.createClass({
     var email = this.state.email;
 
     console.log(email);
-    // Post email to server, create user or return existing
 
     $.ajax({
       url: "/login",
@@ -49,8 +48,9 @@ module.exports = React.createClass({
           placeholder="Email"
           defaultValue={this.state.email}
           onChange={this.handleEmailChange}
+          className="form-control bottom-margin"
         />
-        <input type="submit" />
+      <input className="btn btn-default" type="submit" />
       </form>
     )
   }

@@ -13,9 +13,7 @@ module.exports = React.createClass({
   render: function() {
     return (
       <div>
-        <Link className="Button" to="/login" onClick={this.handleUserSelect}>TAKE A SURVEY</Link>
-
-        <button onClick={this.handleAdminSelect}>MAKE A SURVEY</button>
+        <Link className="btn btn-default " to="/login" onClick={this.handleUserSelect}>Login</Link>
       </div>
     )
   }

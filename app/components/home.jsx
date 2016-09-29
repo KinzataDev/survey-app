@@ -6,6 +6,7 @@ module.exports = React.createClass({
     return (
       <div>
         <h1>Stellar Survey</h1>
+        <hr/>
         <LandingPage />
       </div>
     )
